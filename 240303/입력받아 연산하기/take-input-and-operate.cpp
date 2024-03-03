@@ -8,7 +8,7 @@ int main() {
     cin.get();
     cin >> b;
     a += 87;
-    b /= 10;
+    b %= 10;
     cout << a << endl << b;
     return 0;
 }
