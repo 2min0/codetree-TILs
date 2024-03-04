@@ -8,7 +8,7 @@ int main() {
     int ans = n * n;
     cout << ans;
     if (n<5){
-        cout << "tiny";
+        cout << endl << "tiny";
     }
     return 0;
 }
