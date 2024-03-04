@@ -13,7 +13,7 @@ int main() {
     else if (n==2){
         ans = "Tom";
     }
-    else {
+    else if (n==3){
         ans = "Paul";
     }
     cout << ans;
