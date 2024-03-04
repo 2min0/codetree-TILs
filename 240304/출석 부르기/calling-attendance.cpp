@@ -16,6 +16,9 @@ int main() {
     else if (n==3){
         ans = "Paul";
     }
+    else {
+        ans = "Vacancy";
+    }
     cout << ans;
     return 0;
 }
