@@ -7,7 +7,7 @@ int main() {
     cin >> a >> b;
     int ans = 0;
     for (int i=a; i<=b; i++){
-        int cnt = 0;
+        int cnt = 1;
         for (int j=1; j <i; j++){
             if (i%j==0){
                 cnt += 1;
