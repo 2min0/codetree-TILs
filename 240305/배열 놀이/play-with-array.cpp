@@ -4,42 +4,43 @@ using namespace std;
 int main() {
     // 여기에 코드를 작성해주세요.
     int n, q;
-    int arr[100] = {};
     cin >> n >> q;
+    int arr[101] = {};
     for (int i=1; i<=n; i++){
-        cin >> arr[i-1];
+        cin >> arr[i];
     }
+
     for (int i=1; i<=q; i++){
-        int a;
-        cin >> a;
-        if (a==1){
-            int b;
-            cin >> b;
-            cout << arr[b-1] << endl;
-        } 
-        else if (a==2){
-            int b;
-            cin >> b;
+        int type;
+        cin >> type;
+        if (type == 1){
+            int a;
+            cin >> a;
+            cout << arr[a];
+        }
+        else if (type == 2){
+            int a;
+            cin >> a;
             bool success = false;
-            for (int j=0; j<=n; j++){
-                if (b == arr[j]){
-                    cout << j+1 << endl;
+            for (int j=1; j<=n;j++){
+                if (arr[j] == a){
+                    cout << j;
                     success = true;
                     break;
                 }
             }
-            if (success = false){
-                cout << 0 << endl;
+            if (success == false){
+                cout << 0;
             }
         }
-        else{
-            int b, c;
-            cin >> b >> c;
-            for (int j=b-1; j<=c-1; j++){
+        else if (type == 3){
+            int a, b;
+            cin >> a >> b;
+            for (int j=a; j<=b; j++){
                 cout << arr[j] << " ";
             }
-            cout << endl;
         }
+        cout << endl;
     }
     return 0;
 }
