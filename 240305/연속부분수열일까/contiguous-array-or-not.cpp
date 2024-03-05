@@ -21,17 +21,16 @@ int main() {
         if (arr1[i] == arr2[cnt]){
             length += 1;
             cnt += 1;
+            if (cnt == n2){
+                cout << "Yes";
+                break;
+            }
         }
         else{
             length = 0;
             cnt = 0;
         }
     }
-    if (length == n2){
-        cout << "Yes";
-    }
-    else{
-        cout << "No";
-    }
+    cout << "No";
     return 0;
 }
