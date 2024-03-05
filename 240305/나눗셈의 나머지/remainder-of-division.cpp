@@ -11,7 +11,7 @@ int main() {
         arr[a%b] += 1;
         a /= b;
     }
-    for (int i=0; i<=b; i++){
+    for (int i=0; i<=9; i++){
         ans += (arr[i]*arr[i]);
     }
     cout << ans;
