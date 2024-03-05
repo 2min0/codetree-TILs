@@ -8,6 +8,7 @@ int main() {
     int i = 1;
     while (i <= n) {
         cout << i << " ";
+        i++;
     }
     return 0;
 }
