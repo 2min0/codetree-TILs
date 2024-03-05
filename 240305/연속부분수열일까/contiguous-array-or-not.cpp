@@ -16,21 +16,23 @@ int main() {
     }
 
     int cnt = 0;
-    int length = 0;
-    for (int i=0; i <=n1-n2; i++){
+    bool success = false;
+    for (int i=0; i <=n1; i++){
         if (arr1[i] == arr2[cnt]){
-            length += 1;
             cnt += 1;
             if (cnt == n2){
                 cout << "Yes";
+                success = true;
                 break;
             }
         }
         else{
-            length = 0;
             cnt = 0;
         }
     }
-    cout << "No";
+    if (success == false){
+        cout << "No";  
+    }
+
     return 0;
 }
