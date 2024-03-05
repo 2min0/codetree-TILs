@@ -8,16 +8,25 @@ int main() {
     cin >> N;
     int first = INT_MIN;
     int second = INT_MIN;
+    int third = INT_MIN;
     for (int n=1; n<=N; n++){
         int x;
         cin >> x;
 
-        if (x > second){
-            if (x > first){
-                first = x;
+        if (x > third){
+            if (x > second){
+                if (x > first){
+                    third = second;
+                    second = first;
+                    first = x;
+                }
+                else{
+                    third = second;
+                    second = x;
+                }
             }
-            else {
-                second = x;
+            else{
+                third = x;
             }
             
         }
