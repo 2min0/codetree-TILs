@@ -25,7 +25,7 @@ int main() {
                 output += prev;
                 output += to_string(cnt);
                 output += x[i];
-                output += 1;
+                output += to_string(1);
             }
             }
             else{
