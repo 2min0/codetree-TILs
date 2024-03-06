@@ -40,7 +40,8 @@ int main() {
             }
             }
         }
+        cout << output.length() << endl << output;
     }
-    cout << output.length() << endl << output;
+    
     return 0;
 }
