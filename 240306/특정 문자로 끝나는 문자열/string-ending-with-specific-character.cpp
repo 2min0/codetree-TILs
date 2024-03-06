@@ -6,7 +6,7 @@ int main() {
     // 여기에 코드를 작성해주세요.
     string list[10] = {};
     string x;
-    success = false;
+    bool success = false;
     for (int i=0; i<10; i++){
         cin >> x;
         list[i] = x;
