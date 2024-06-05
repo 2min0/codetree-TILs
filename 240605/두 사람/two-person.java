@@ -5,11 +5,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int ageA = sc.nextInt();
-        String genA = sc.next();
+        char genA = sc.next().charAt(0);
         int ageB = sc.nextInt();
-        String genB = sc.next();
+        char genB = sc.next().charAt(0);
 
-        if (ageA >= 19 && genA == "M" || ageB >= 19 && genB == "M") System.out.print(1);
+        if (ageA >= 19 && genA == 'M' || ageB >= 19 && genB == 'M') System.out.print(1);
         else System.out.print(0);
     }
 }
