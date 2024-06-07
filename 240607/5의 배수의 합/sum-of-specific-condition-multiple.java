@@ -8,6 +8,12 @@ public class Main {
         int b = sc.nextInt();
         int ans = 0;
 
+        if (a>b){
+            int tmp = a;
+            a = b;
+            b = tmp;
+        }
+
         for (int i = a; i<=b; i++){
             if (i%5 == 0){
                 ans += i;
