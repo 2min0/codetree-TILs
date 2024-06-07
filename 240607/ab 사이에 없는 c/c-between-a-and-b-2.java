@@ -17,7 +17,7 @@ public class Main {
             }
         }
 
-        if (Check == true)
+        if (check == true)
             System.out.print("NO");
     }
 }
