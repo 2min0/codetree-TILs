@@ -10,6 +10,7 @@ public class Main {
             ans += i;
             if (ans >=n){
                 System.out.print(i);
+                break;
             }
         }
     }
