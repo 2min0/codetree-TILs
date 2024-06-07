@@ -12,6 +12,7 @@ public class Main {
             cnt++;
             if (n <= 1){
                 System.out.print(cnt);
+                break;
             }
         }
     }
