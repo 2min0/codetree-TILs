@@ -9,7 +9,7 @@ public class Main {
         boolean check = false;
 
         for (int i = a; i<=b; i++){
-            if (1920%i ==0 && 288-%i == 0){
+            if (1920%i ==0 && 2880%i == 0){
                 check = true;
                 System.out.print(1);
                 break;
