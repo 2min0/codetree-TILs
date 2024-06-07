@@ -7,17 +7,22 @@ public class Main {
         int n = sc.nextInt();
 
         for (int i = 0; i<n; i++){
-            if (i == 0){
+            if (i== 0){
                 for (int j = 0; j<n; j++){
                     System.out.print("* ");
                 }
             }
-            else {
-                for (int j = 0; j<i/2; j++){
-                    System.out.print("   ");
+            else if (i == 1){
+                for (int j = 0; j<n/2; j++){
+                    System.out.print("  * ");
                 }
-                for (int j = 0; j<n/2-i/2; j++){
-                    System.out.print("  *");
+            }
+            else{
+                for (int j = 0; j<i/2; j++){
+                    System.out.print("    ");
+                }
+                for (int j =0; j<n/2 - i/2; j++){
+                    System.out.print("  * ");
                 }
             }
             System.out.print("\n");
