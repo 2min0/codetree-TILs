@@ -7,7 +7,7 @@ public class Main {
         int n = sc.nextInt();
         boolean check = false;
 
-        for (int i = 2; i<=n-1){
+        for (int i = 2; i<=n-1; i++){
             if (n%i == 0){
                 check = true;
                 System.out.print('C');
