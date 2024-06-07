@@ -12,12 +12,12 @@ public class Main {
         for (int i = a; i<=b; i++){
             if (i%c == 0){
                 check = false;
-                System.out.print("YES");
+                System.out.print("NO");
                 break;
             }
         }
 
         if (check == true)
-            System.out.print("NO");
+            System.out.print("YES");
     }
 }
