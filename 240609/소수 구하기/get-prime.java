@@ -13,7 +13,7 @@ public class Main {
             else if (i%2 == 0) continue;
 
             boolean success = true;
-            for (int j = 3; j<=i; j++){
+            for (int j = 3; j<i; j++){
                 if (i%j == 0){
                     success = false;
                     break;
