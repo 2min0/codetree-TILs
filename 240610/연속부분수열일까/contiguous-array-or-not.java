@@ -7,6 +7,8 @@ public class Main {
         int n1 = sc.nextInt();
         int n2 = sc.nextInt();
 
+        if (n1 < n2) System.out.print("No");
+        else{
         int[] arrA = new int[n1];
         int[] arrB = new int[n2];
 
@@ -30,5 +32,6 @@ public class Main {
 
         if (success == true) System.out.print("Yes");
         else System.out.print("No");
+        }
     }
 }
