@@ -5,21 +5,19 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int[] arr = new int[10];
+        int cnt = 0;
 
-        int i = 0;
-
-        while(i < 10){
+        for (int i = 0; i<10; i++){
             int n = sc.nextInt();
-            if (n==0){
-                i--;
-                break;
-            }
 
-            arr[i++] = n;
+            if (n== 0) break;
+
+            arr[i] = n;
+            cnt++;
         }
 
-        for (int j = i; j>=0; j--){
-            System.out.printf("%d ", arr[j]);
+        for (int i = cnt-1; i>=0; i--){
+            System.out.printf("%d ", arr[i]);
         }
     }
 }
