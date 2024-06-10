@@ -11,11 +11,9 @@ public class Main {
 
         while(true){
             int c = a+b;
-
-            if (c > 100) break;
-
             System.out.printf("%d ", c);
 
+            if (c > 100) break;
             a = b; b = c;
         }
 
