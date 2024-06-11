@@ -13,7 +13,7 @@ public class Main {
             if (str.equals("0")){
                 System.out.println(cnt);
 
-                for (int i = 1; i<cnt/2; i++){
+                for (int i = 1; i<=cnt; i+=2){
                     System.out.println(save[i]);
                 }
                 break;
