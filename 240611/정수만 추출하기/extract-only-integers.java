@@ -18,7 +18,7 @@ public class Main {
 
         if (success == false) cnt += Integer.parseInt(A);
 
-        boolean success = false;
+        success = false;
         for (int i = 0; i<B.length(); i++){
             if (Character.isDigit(B.charAt(i)) == false){
                 cnt += Integer.parseInt(B.substring(0, i));
