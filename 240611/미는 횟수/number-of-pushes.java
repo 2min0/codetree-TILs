@@ -7,10 +7,13 @@ public class Main {
         String A = sc.next();
         String B = sc.next();
 
-        for (int i = 1; i<=A.length(); i++){
-            A = A.charAt(A.length()-1) + A.substring(0, A.length());
-
-            if (A.equals(B)) System.out.print(i);
+        int len = A.length();
+        for (int i = 1; i<=len; i++){
+            A = A.charAt(len-1) + A.substring(0, len-1);
+            if (A.equals(B)){
+                System.out.print(i); break;
+                }
+            if (i == len) System.out.print(-1);
         }    
     }
 }
