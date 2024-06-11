@@ -5,11 +5,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         String s = sc.next();
+        char[] ss = s.toCharArray();
         int q = sc.nextInt();
 
         for (int i = 0; i<q; i++){
             int type = sc.nextInt();
-            char[] ss = s.toCharArray();
 
             if (type == 1){
                 int a = sc.nextInt();
