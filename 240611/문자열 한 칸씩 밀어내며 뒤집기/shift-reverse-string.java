@@ -19,11 +19,15 @@ public class Main {
                 System.out.println(str);
             }
             else{
-                String tmp = "";
-                for (int j = str.length()-1; j>=0; j--){
-                    tmp += str.charAt(j);
+                char[] arr = str.toCharArray();
+
+                for(int j = 0; j < str.length() / 2; j++) {
+                    char temp = arr[j];
+                    arr[j] = arr[str.length() - j - 1];
+                    arr[str.length() - j - 1] = temp;
                 }
-                str = tmp;
+
+                str = new String(arr);
                 System.out.println(str);
             }
         }
