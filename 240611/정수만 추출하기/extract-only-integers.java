@@ -13,6 +13,7 @@ public class Main {
             if (Character.isDigit(A.charAt(i)) == false){
                 cnt += Integer.parseInt(A.substring(0, i));
                 success = true;
+                break;
             }
         }
 
@@ -23,6 +24,7 @@ public class Main {
             if (Character.isDigit(B.charAt(i)) == false){
                 cnt += Integer.parseInt(B.substring(0, i));
                 success = true;
+                break;
             }
         }
 
